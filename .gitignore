@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Power BI temporary files
+*.tmp
+~$*.pbix
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
