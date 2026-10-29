@@ -1,48 +1,79 @@
 # 📊 Sales Performance Dashboard
 
-An interactive data analytics project designed to analyze sales performance, track business KPIs, and identify trends across products, categories, regions, and time periods.
+An interactive data analytics project built with **Python, Pandas, Streamlit, and Plotly** to analyze sales performance, track business KPIs, and visualize trends across products, categories, regions, and time periods.
 
-Built using **Python, Pandas, Streamlit, SQL, and Power BI dashboard development concepts**, this project demonstrates an end-to-end approach to sales data analysis and visualization.
+🚀 **Live Demo:** [View Sales Performance Dashboard](https://sales-performance-dashboard-bsyk2bjuk4urccemo5enve.streamlit.app/)
 
-## 🚀 Project Overview
+💻 **GitHub Repository:** [Sales-Performance-Dashboard](https://github.com/Praveen-1131/Sales-Performance-Dashboard)
 
-Businesses need to understand their sales performance to make informed decisions. This project transforms sample sales data into meaningful insights through interactive visualizations, key performance indicators (KPIs), and SQL analysis.
+---
 
-The dashboard helps users explore sales trends, compare regional performance, evaluate product profitability, and investigate the impact of discounts.
+## 📌 Project Overview
+
+Businesses need to understand their sales performance to make informed decisions. This project transforms sample sales data into useful information through interactive visualizations, key performance indicators (KPIs), and SQL analysis.
+
+The dashboard helps users explore sales trends, compare regional performance, evaluate product categories, and investigate profitability using interactive filters.
 
 ## 🎯 Project Objectives
 
 - Analyze overall sales and profit performance.
-- Track key business performance indicators.
+- Track important business performance indicators.
 - Identify monthly sales trends.
 - Compare sales across regions and product categories.
-- Evaluate product and salesperson performance.
-- Investigate discounts and low-profit transactions.
-- Present insights through interactive dashboards.
+- Explore top-performing products.
+- Investigate profitability and potential data quality issues.
+- Present sales data through an interactive dashboard.
 
 ## ✨ Key Features
 
 - **KPI Tracking:** Total Sales, Total Profit, Total Orders, Units Sold, Profit Margin, and Average Order Value.
-- **Interactive Filters:** Filter sales data by date, region, and category.
-- **Sales Trend Analysis:** Visualize monthly sales performance.
-- **Category Analysis:** Compare performance across product categories.
-- **Regional Analysis:** Identify differences in sales and profitability across regions.
-- **Product Performance:** Analyze top-performing products.
-- **Data Exploration:** View filtered sales records and download the data as a CSV file.
+- **Interactive Filters:** Filter sales data by order date, region, and product category.
+- **Monthly Sales Trend:** Visualize sales performance over time.
+- **Category Analysis:** Compare revenue across product categories.
+- **Regional Analysis:** Explore differences in sales across regions.
+- **Product Performance:** Identify top products by revenue.
+- **Data Exploration:** View filtered sales records.
+- **CSV Export:** Download filtered data for further analysis.
 - **Data Quality Checks:** Inspect the dataset for potential data quality issues.
-- **SQL Analysis:** Explore business questions using SQL queries.
-- **Power BI Guide:** Follow the included guide to build a Power BI report.
+- **SQL Analysis:** Use SQL queries to investigate business performance.
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Python
-- **Data Analysis:** Pandas
-- **Dashboard Development:** Streamlit
-- **Data Visualization:** Plotly
-- **Database Querying:** SQL / SQL Server-compatible queries
-- **Business Intelligence:** Microsoft Power BI (report-building guide included)
-- **Development Environment:** Visual Studio Code
-- **Version Control:** Git and GitHub
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| Pandas | Data cleaning and analysis |
+| Streamlit | Interactive dashboard development |
+| Plotly | Interactive data visualizations |
+| SQL | Business data analysis |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Visual Studio Code | Development environment |
+
+## 📸 Dashboard Screenshots
+
+Add screenshots of your running dashboard to showcase its interface and visualizations.
+
+Create this folder in your project:
+
+`docs/screenshots/`
+
+Save your screenshots using these filenames:
+
+- `dashboard-overview.png`
+- `sales-analysis.png`
+
+Then add them to the repository and keep the following Markdown:
+
+### Dashboard Overview
+
+![Sales Performance Dashboard Overview](docs/screenshots/dashboard-overview.png)
+
+### Sales Analysis
+
+![Sales Performance Analysis](docs/screenshots/sales-analysis.png)
+
+*Note: Add the screenshot files to the specified folder so the images display correctly on GitHub.*
 
 ## 📂 Project Structure
 
@@ -59,15 +90,13 @@ Sales-Performance-Dashboard/
 │   └── analysis.py
 ├── sql/
 │   └── sales_analysis.sql
-├── dashboard/
-│   └── power_bi_build_guide.md
-├── docs/
-│   └── data_dictionary.md
 └── tests/
     └── test_analysis.py
 ```
 
 ## ⚙️ Installation and Setup
+
+Follow these steps to run the project locally.
 
 ### 1. Clone the repository
 
@@ -75,7 +104,7 @@ Sales-Performance-Dashboard/
 git clone https://github.com/Praveen-1131/Sales-Performance-Dashboard.git
 ```
 
-### 2. Open the project folder
+### 2. Navigate to the project folder
 
 ```bash
 cd Sales-Performance-Dashboard
@@ -87,27 +116,27 @@ cd Sales-Performance-Dashboard
 python -m venv .venv
 ```
 
-### 4. Activate the environment
+### 4. Activate the virtual environment
 
-**Windows PowerShell:**
+For Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 5. Install dependencies
+### 5. Install the dependencies
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 6. Run the dashboard
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
-Open the local URL displayed in your terminal, usually:
+Open the local URL displayed in the terminal, usually:
 
 `http://localhost:8501`
 
@@ -124,29 +153,25 @@ The SQL scripts demonstrate how to investigate business performance using querie
 - Low-profit transactions
 - Discount analysis
 
-SQL queries are available in `sql/sales_analysis.sql`.
+SQL scripts are available in:
 
-## 📈 Power BI Dashboard
+`sql/sales_analysis.sql`
 
-The project includes a Power BI build guide at:
+## 📁 Dataset
 
-`dashboard/power_bi_build_guide.md`
+This project uses a **synthetic sample sales dataset** for demonstration and learning purposes. The data does not represent actual company transactions or confidential business information.
 
-Use the guide and the supplied CSV dataset to create a Power BI report with KPI cards, sales trend charts, category and regional comparisons, and interactive filters.
-
-**Note:** The Power BI `.pbix` report is not included yet. It must be created separately in Power BI Desktop.
+The dashboard uses the dataset to calculate KPIs, generate visualizations, and support interactive analysis.
 
 ## 🧪 Testing
 
-Run the project's unit tests with:
+The project includes a `tests` directory for analysis-related tests.
+
+Run the tests using:
 
 ```bash
 python -m pytest
 ```
-
-## 📁 Dataset
-
-The project uses a **synthetic sample sales dataset** for demonstration and learning purposes. It does not represent actual company transactions or confidential business information.
 
 ## 💡 Skills Demonstrated
 
@@ -157,16 +182,23 @@ The project uses a **synthetic sample sales dataset** for demonstration and lear
 - Interactive dashboard development
 - SQL querying and aggregation
 - Data visualization
-- Data interpretation and business problem-solving
-- Git and GitHub project management
+- Data interpretation and analytical thinking
+- Git and GitHub version control
+- Streamlit application deployment
 
 ## 🔮 Future Enhancements
 
-- Add a completed Power BI report.
 - Connect the dashboard to a SQL database.
 - Add sales forecasting and trend prediction.
-- Implement more advanced customer and product analysis.
-- Deploy the Streamlit dashboard online.
+- Expand customer and product performance analysis.
+- Improve interactive filtering and visualizations.
+- Add more automated data quality checks.
+
+## 🌐 Live Application
+
+Explore the deployed dashboard:
+
+**[Sales Performance Dashboard — Live Demo](https://sales-performance-dashboard-bsyk2bjuk4urccemo5enve.streamlit.app/)**
 
 ## 👨‍💻 Author
 
@@ -174,8 +206,10 @@ The project uses a **synthetic sample sales dataset** for demonstration and lear
 
 B.Tech Computer Science and Engineering | Aspiring Data Analyst
 
-GitHub: [Praveen-1131](https://github.com/Praveen-1131)
+- **GitHub:** [Praveen-1131](https://github.com/Praveen-1131)
+- **Project Repository:** [Sales-Performance-Dashboard](https://github.com/Praveen-1131/Sales-Performance-Dashboard)
+- **Live Demo:** [Open Dashboard](https://sales-performance-dashboard-bsyk2bjuk4urccemo5enve.streamlit.app/)
 
 ---
 
-If you find this project useful, feel free to explore the repository and its analysis scripts.
+*This project was developed to practice data analytics, business KPI reporting, SQL, and interactive data visualization.*
